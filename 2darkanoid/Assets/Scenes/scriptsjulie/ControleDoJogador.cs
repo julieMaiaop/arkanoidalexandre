@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class ControleDoJogador : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
+
+    public float velocidadeDoJogador;
+
+    
 
     // Update is called once per frame
     void Update()
     {
         
     }
+    private void MovimentarJogador()
+{
+    
+
+}
+
 }
