@@ -17,10 +17,16 @@ public class PowerUp : MonoBehaviour
                     collision.gameObject.transform.localScale += new Vector3(1, 0, 0);
                     break;
                 case PowerUpType.SpeedUpBall:
-                    Ball.instance.SpeedUp();
+                    if (Ball.instance != null)
+                    {
+                        Ball.instance.SpeedUp();
+                    }
                     break;
                 case PowerUpType.ExtraBall:
-                    Instantiate(Ball.instance, transform.position, Quaternion.identity);
+                    if (Ball.instance != null)
+                    {
+                        Instantiate(Ball.instance, Ball.instance.transform.position, Quaternion.identity);
+                    }
                     break;
             }
             Destroy(gameObject); // Remove o power-up após a coleta
