@@ -21,7 +21,13 @@ public class Bola : MonoBehaviour
     {
         if(jogoIniciou == false)
         {
-            //parei na aula 3 minuto 20
+            //parei na aula 3 minuto 20]
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                MovimentarBolinha();
+                jogoIniciou = true;
+            }
+
         }
     }
 
