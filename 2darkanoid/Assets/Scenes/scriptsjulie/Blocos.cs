@@ -11,8 +11,16 @@ public class Blocos : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    //void Update()
+    //{
+
+    // }
+    private void OnCollisionEnter2D(Collision2D collisioninfo)
     {
-        
+        if(collisioninfo.gameObject.CompareTag("Bola"))
+        {
+            Destroy(this.gameObject);
+        }
     }
+
 }
