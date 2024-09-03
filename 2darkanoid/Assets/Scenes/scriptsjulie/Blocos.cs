@@ -1,6 +1,7 @@
-using System.Collections;
+        using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Blocos : MonoBehaviour
 {
@@ -22,5 +23,12 @@ public class Blocos : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    public void PlayGame()
+    {
+
+        SceneManager.LoadScene("julieCena");
+
+    }
+
 
 }
